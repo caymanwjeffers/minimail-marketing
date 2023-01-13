@@ -193,7 +193,7 @@
           <div class="col-12 col-md-6 col-lg-5">
             <!-- Heading -->
             <h2 class="display-3 fw-bold text-white mb-6 mb-md-8">
-              Seamless, private, free and secure.
+              Seamless, Private, and Secure.
             </h2>
 
             <!-- Text -->
@@ -206,15 +206,16 @@
             <!-- Text -->
             <p class="text-muted lead mb-7 mb-md-0">
               <span class="text-white fw-bold">Private.</span>
-              Unlike Unroll.me, Lessmail never shares or sells any of your data.
-              Your information is stored securely on your personal device, for
-              only you to see!
+              Unlike Unroll.me, Lessmail never stores, shares or sells any of
+              your email contents. Your information is stored securely on your
+              personal device, for only you to see!
             </p>
 
             <!-- Text -->
             <p class="text-muted lead mt-7 mb-md-0">
-              <span class="text-white fw-bold">Free.</span>
-              Get unlimited free usage for the first 24 hours today!
+              <span class="text-white fw-bold">Secure.</span>
+              Lessmail is built with the latest security standards in mind, and
+              is as secure as your native email client.
             </p>
           </div>
 
@@ -256,8 +257,9 @@
 
             <!-- Text -->
             <p class="text-muted lead mb-6 mb-md-8">
-              Clear your inboxes in minutes, and save yourself the headache of
-              navigating an inbox full of mail you don't want or need.
+              Clear mulitiple emails in minutes, and save yourself the headache
+              of navigating a hectic inbox full of messages you don't want or
+              need.
             </p>
           </div>
         </div>
@@ -325,5 +327,29 @@
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBdXqm5iUQZI6MR7y5mXO7DFBa_3Rj13q8",
+        authDomain: "lessemail-marketing.firebaseapp.com",
+        projectId: "lessemail-marketing",
+        storageBucket: "lessemail-marketing.appspot.com",
+        messagingSenderId: "1092226461956",
+        appId: "1:1092226461956:web:03bc78b5c7d35ba5592051",
+        measurementId: "G-5W63LJE4BV",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
